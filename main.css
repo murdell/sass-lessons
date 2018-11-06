@@ -28,7 +28,7 @@ p {
   text-transform: uppercase; }
 
 .container {
-  background-image: url(../images/orkney_01.jpg);
+  background-image: url(assets/images/orkney_01.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
