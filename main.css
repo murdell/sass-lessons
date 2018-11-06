@@ -1,0 +1,36 @@
+/* Styling for the POST div - this is not great as we should not nest too many layers/*
+/*
+.wrapper {
+   .main {
+       .container {
+           .article {
+               .post {
+                   p {
+                       color: blue;
+                   }
+               }
+           }
+       }
+   }
+}
+*/
+/* Styling for the MAIN div whose parent is wrapper. The "&" signifies that wrapper is the parent */
+.wrapper .main {
+  width: 300px;
+  height: 300px;
+  background-color: yellow; }
+
+p {
+  font-family: open-sans;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase; }
+
+.container {
+  background-image: url(../images/orkney_01.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=main.css.map */
