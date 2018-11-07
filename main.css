@@ -1,47 +1,31 @@
-/*Function to convert pixels to em
-@function pxToEm($value, $base) {
-    @return ($value / $base) + em;
-}
+.item-1 {
+  width: 61px; }
+
+.item-2 {
+  width: 62px; }
+
+.item-3 {
+  width: 63px; }
+
+.item-4 {
+  width: 64px; }
+
+p {
+  background-color: pink;
+  color: white;
+  border: 1px solid pink;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.btn {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #e84610;
+  color: #fff; }
 
 h1 {
-    font-size: pxToEm (32,16);
-}
- */
-/*This is a map example - commas used and semi-colon OUTSIDE the () */
-/* e.g. item-black, item-yellow etc*/
-.item-blue {
-  background-color: #0977d3; }
-
-/* e.g. item-black, item-yellow etc*/
-.item-red {
-  background-color: #e84610; }
-
-/* e.g. item-black, item-yellow etc*/
-.item-green {
-  background-color: #bada55; }
-
-/* e.g. item-black, item-yellow etc*/
-.item-black {
-  background-color: #000000; }
-
-/* e.g. item-black, item-yellow etc*/
-.item-white {
-  background-color: #ffffff; }
-
-/* e.g. item-black, item-yellow etc*/
-.item-yellow {
-  background-color: #ffff00; }
-
-/*This is then end of the map example */
-body {
-  background-color: #000000; }
-
-div {
-  width: 300px;
-  height: 500px;
   border: 1px solid black; }
-
-h1 {
-  color: #ffff00; }
 
 /*# sourceMappingURL=main.css.map */

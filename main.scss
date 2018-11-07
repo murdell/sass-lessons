@@ -1,56 +1,45 @@
-/*Function to convert pixels to em
-@function pxToEm($value, $base) {
-    @return ($value / $base) + em;
+$class-name: item;
+
+@for $i from 1 through 4 {
+    .#{$class-name}-#{$i} {
+        width: 60px + $i;
+    }
+}
+
+@mixin button($color, $size) {
+    width: $size;
+    height: $size / 2;
+    border: 1px solid $color;
+
+    @if $color == #e84610 {
+        color: #fff;
+    } @else {
+        color: $color;
+    }
+}
+
+@mixin unicornify() {
+    background-color: pink;
+    color: white;
+    @content;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    @include unicornify {
+        border: 1px solid pink;
+        border-radius: 100%;
+        text-align: center;
+    }
+}
+
+.btn {
+    @include button(#e84610, 200px)
 }
 
 h1 {
-    font-size: pxToEm (32,16);
+    @if 1 + 1 == 2 {
+        border: 1px solid black;
+    }
 }
- */
- 
- $blue: #0977d3;
- $red: #e84610;
- $green: #bada55;
- $black: #000000;
- $white: #ffffff;
- $yellow: #ffff00;
- 
- $width: 300px;
- $height: 500px;
- 
- /*This is a map example - commas used and semi-colon OUTSIDE the () */
- $colors: (
- blue: #0977d3, 
- red: #e84610, 
- green: #bada55,
- black: #000000,
- white: #ffffff,
- yellow: #ffff00
- );
- 
- @each $key, $value in $colors {
-     /* e.g. item-black, item-yellow etc*/
-     .item-#{$key} {
-         background-color: $value;
-     }
- }
- 
- /*This is then end of the map example */
- 
- 
-
- 
- body {
-     background-color: $black;
- }
- 
- div {
-     width: $width;
-     height: $height;
-     border: 1px solid black;
- }
- 
- h1 {
-     color: $yellow;
-     
- }
