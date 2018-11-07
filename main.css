@@ -1,54 +1,47 @@
-/* Styling for the POST div - this is not great as we should not nest too many layers/*
-/*
-.wrapper {
-   .main {
-       .container {
-           .article {
-               .post {
-                   p {
-                       color: blue;
-                   }
-               }
-           }
-       }
-   }
+/*Function to convert pixels to em
+@function pxToEm($value, $base) {
+    @return ($value / $base) + em;
 }
-*/
-/* Styling for the MAIN div whose parent is wrapper. The "&" signifies that wrapper is the parent */
-.wrapper .main {
-  width: 300px;
-  height: 300px;
-  background-color: yellow; }
 
-p {
-  font-family: open-sans;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase; }
-
-/*
-.container {
-    background: {
-        image: url(assets/images/orkney_01.jpg);
-        size: cover;
-        position: center center;
-        repeat: no-repeat;
-    }
+h1 {
+    font-size: pxToEm (32,16);
 }
-/* Placeholder backgroun image */
+ */
+/*This is a map example - commas used and semi-colon OUTSIDE the () */
+/* e.g. item-black, item-yellow etc*/
+.item-blue {
+  background-color: #0977d3; }
+
+/* e.g. item-black, item-yellow etc*/
+.item-red {
+  background-color: #e84610; }
+
+/* e.g. item-black, item-yellow etc*/
+.item-green {
+  background-color: #bada55; }
+
+/* e.g. item-black, item-yellow etc*/
+.item-black {
+  background-color: #000000; }
+
+/* e.g. item-black, item-yellow etc*/
+.item-white {
+  background-color: #ffffff; }
+
+/* e.g. item-black, item-yellow etc*/
+.item-yellow {
+  background-color: #ffff00; }
+
+/*This is then end of the map example */
+body {
+  background-color: #000000; }
+
 div {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  width: 300px;
+  height: 500px;
+  border: 1px solid black; }
 
-.container {
-  background-image: url(assets/images/orkney_01.jpg); }
-
-.article {
-  background-image: "assets/images/orkney_02.jpg"; }
-
-.post {
-  background-image: "assets/images/two_cats.jpg"; }
+h1 {
+  color: #ffff00; }
 
 /*# sourceMappingURL=main.css.map */
