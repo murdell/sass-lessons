@@ -27,10 +27,28 @@ p {
   text-align: center;
   text-transform: uppercase; }
 
+/*
 .container {
-  background-image: url(assets/images/orkney_01.jpg);
+    background: {
+        image: url(assets/images/orkney_01.jpg);
+        size: cover;
+        position: center center;
+        repeat: no-repeat;
+    }
+}
+/* Placeholder backgroun image */
+div {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
+
+.container {
+  background-image: url(assets/images/orkney_01.jpg); }
+
+.article {
+  background-image: "assets/images/orkney_02.jpg"; }
+
+.post {
+  background-image: "assets/images/two_cats.jpg"; }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,7 +36,7 @@ p {
         transform: uppercase;
     }
 }
-
+/*
 .container {
     background: {
         image: url(assets/images/orkney_01.jpg);
@@ -44,4 +44,29 @@ p {
         position: center center;
         repeat: no-repeat;
     }
+}
+/* Placeholder backgroun image */
+%backgroundImage {
+    background: {
+        size: cover;
+        position: center center;
+        repeat: no-repeat;
+    }    
+}
+
+div {
+    @extend %backgroundImage;
+}
+
+.container {
+     background-image: url(assets/images/orkney_01.jpg);
+}
+
+.article {
+    background-image: "assets/images/orkney_02.jpg";
+}
+
+.post {
+    background-image: "assets/images/two_cats.jpg";
+    
 }
